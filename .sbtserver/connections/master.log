@@ -1,0 +1,10 @@
+New log file opened at Sun Jan 08 17:03:09 JST 2017 by 6848@genhirano-CF-SZ5
+Taking next connection to: 61045
+New client attempting to connect on port: 61046-61045
+  Address = /10.0.75.1:61045
+This client on port 61046 has uuid fe6a4f93-1b89-40b9-9a30-63bdc0fa828e configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-fe6a4f93-1b89-40b9-9a30-63bdc0fa828e
+Taking next connection to: 61045
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 61045

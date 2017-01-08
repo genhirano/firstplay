@@ -1,5 +1,9 @@
 package controllers;
 
+import java.util.List;
+
+import models.User;
+import play.Logger;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.index;
@@ -17,7 +21,18 @@ public class HomeController extends Controller {
      * <code>GET</code> request with a path of <code>/</code>.
      */
     public Result index() {
-        return ok(index.render("Your new application is ready. by hirano　ようやく"));
+
+
+        User user = new User();
+        user.userName = "username";
+        user.password = "password";
+        user.save();
+
+        List<User> userList = User.find.all();
+
+        userList.forEach(u->Logger.info(u.id + " : " +  u.userName + " : " + u.password + " : " + u.createdAt));
+        Logger.info("-- record : " + userList.size());
+    	return ok(index.render("Your new application is ready. by hirano　ようやく"));
     }
 
 }
